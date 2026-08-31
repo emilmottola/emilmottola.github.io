@@ -1,4 +1,5 @@
-# Push to main → FTP into the Namecheap addon docroot for emilmottola.com.
+# Manual ship: Actions → Deploy to Namecheap → Run workflow.
+# FTPS into the Namecheap addon docroot for emilmottola.com.
 # Secrets (repo Settings → Secrets and variables → Actions):
 #   FTP_SERVER     e.g. server293.web-hosting.com
 #   FTP_USERNAME   cPanel FTP user whose home is /home/tesscrri/emilmottola.com
@@ -6,8 +7,6 @@
 name: Deploy to Namecheap
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 concurrency:
